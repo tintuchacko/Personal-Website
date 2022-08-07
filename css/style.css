@@ -78,7 +78,7 @@ ul{
 }
 .section .container{
     padding-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 120px;
 }
 .section-title{
     flex: 0 0 100%;
@@ -572,6 +572,7 @@ h3.my-profession{
     flex:0 0 33.33%;
     max-width:33.33%;
     margin-bottom: 30px;
+    
 
 }
 .portfolio .portfolio-item-inner{
@@ -579,6 +580,7 @@ h3.my-profession{
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
 }
 .portfolio .portfolio-item-inner .portfolio-img img{
     width: 100%;
@@ -591,6 +593,41 @@ h3.my-profession{
     text-align: center;
 }
 
+
+/*   hover effect  */
+.portfolio .portfolio-item-inner .overlay{
+    width: 100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),var(--skin-color));
+    opacity: 0;
+    transition: 1s;
+}
+.portfolio .portfolio-item-inner:hover .overlay{
+    opacity: 1;
+
+}
+.portfolio .portfolio-item-inner .project-links{
+    /* width: 80%; */
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+.portfolio .portfolio-item-inner:hover .project-links{
+    bottom: 40%;
+    opacity: 1;
+}
+.portfolio .portfolio-item-inner .project-links .fa{
+    color: #fff;
+    font-size: 35px;
+    padding: 0px 7px;
+}
+/*   hover effect end */
 
 
 
