@@ -503,7 +503,7 @@ h3.my-profession{
 }
 /* service */
 .service .container{
-    padding-bottom: 40px;
+    padding-bottom: 120px;
 }
 .service .service-item{
     margin-bottom: 30px;
@@ -557,7 +557,7 @@ h3.my-profession{
 }
 /* portfolio */
 .portfolio .container{
-    padding-bottom: 40px;
+    padding-bottom: 120px;
 }
 .portfolio .portfolio-heading{
     flex: 0 0 100%;
